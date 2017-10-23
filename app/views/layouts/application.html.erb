@@ -13,19 +13,62 @@
 
     <%= csrf_meta_tags %>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
   </head>
 
   <body>
-  	<nav>
-  		<ul>Home</ul>
-  		<ul>About</ul>
-  		<ul>Contact</ul>
-  	</nav>
+
+
+
+
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">PizzaJunkie.com</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Pizza Maker</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More Pizza's <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Frozen Pizza</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Beer Pairings</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+
+
 
     <%= yield %>
 
-    <footer>
-    Copyright TOMMY 2017
+    <footer class="footer" id="my_footer">
+      <div class="container-fluid">
+      Copyright TOMMY 2017
+      </div>
     </footer>
 
 
