@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+	
+	background-color: #ff6e49;
+}
+
 h1 {
 	
 	color: red; 
@@ -25,5 +30,5 @@ footer {
 
 #my_footer{
 	
-	height: 200px;
+	height: 25px;
 }
